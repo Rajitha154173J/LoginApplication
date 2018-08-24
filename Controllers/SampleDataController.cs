@@ -14,11 +14,11 @@ namespace application.Controllers
             "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
         };
 
-        // [HttpGet]
-        // public ActionResult<IEnumerable<string>>Get()
-        // {
-        //     return new string [] { "value1", "value2"};
-        // }
+        [HttpGet]
+        public ActionResult<IEnumerable<string>>Get()
+        {
+            return new string [] { "value1", "value2"};
+        }
 
 
         [HttpGet("[action]")]
